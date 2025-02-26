@@ -1,0 +1,221 @@
+/* Контейнер слайдера */
+.slider-container {
+    width: 100%;
+    height: 650px;
+    position: relative;
+}
+
+/* Слайд с фоном */
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    padding-top: 70px;
+    padding-left: 16.8229%;
+    padding-right: 16.8229%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Текстовая часть слева */
+.slide-text {
+    flex: 1;
+    color: white;
+    text-align: left;
+    max-width: 65%;
+    margin-bottom: 100px;
+}
+
+/* Заголовок */
+.slide-text h2 {
+    font-size: 64px;
+    font-weight: 600;
+    margin-bottom: 160px;
+}
+
+/* Кнопка снизу */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0093D3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Изображение товара (поверх фона) */
+.slide-foreground {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    width: 400px;
+    max-width: 400px;
+}
+
+.slide-foreground img {
+    width: 400px;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    position: absolute;
+    right: 15%;
+    bottom: 150px;
+}
+
+/* Навигационные кнопки */
+.swiper-navigation-buttons {
+    position: absolute;
+    bottom: 12px;
+    right: calc(16.82291vw);
+    display: flex;
+    gap: 10px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: static !important;
+    color: white !important;
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Пагинация */
+.swiper-pagination {
+    position: absolute;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    border: 2px solid white;
+    background-color: transparent;
+    opacity: 1;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: white;
+    transform: scale(1.2);
+}
+
+@media (min-width: 2550px) {
+    .slide{
+        padding-left: 25%;
+    }
+    .slide-foreground img {
+        right: 25%;
+    }
+    .swiper-navigation-buttons {
+        right: calc(26.5vw);
+    }
+}
+@media (max-width: 1441px){
+    .slide{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .slide-text h2 {
+        font-size: 55px;
+    }
+    .slide-foreground img {
+        right: 8%;
+    }
+    .swiper-navigation-buttons {
+        right: calc(10vw);
+    }
+}
+
+@media (max-width: 1024px) {
+    .slide {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .slide-foreground img {
+        right: 5%;
+    }
+    .slide-text h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slide {
+        padding-left: 8%;
+    }
+}
+
+@media (max-width: 481px) {
+    .slider-container {
+        height: 530px;
+    }
+    .slide {
+        padding-left: 4%;
+        padding-top: 0;
+    }
+    .slide-text{
+        margin-bottom: 130px;
+    }
+    .slide-foreground img {
+        width: 250px;
+        right: 2%;
+        bottom: 180px;
+    }
+    .slide-text h2 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 130px;
+    }
+    .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: var(--swiper-pagination-bottom, 115px);
+    }
+    .swiper-navigation-buttons {
+        bottom: 40px;
+    }
+}
+
+@media (max-width: 431px) {
+    .slide-foreground img {
+        width: 200px;
+    }
+    .slide-text h2 {
+        font-size: 20px;
+        margin-bottom: 70px;
+    }
+    .slide-foreground img {
+        bottom: 210px;
+    }
+    .btn {
+        padding: 8px 16px;
+        font-weight: 500;
+    }
+    .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: var(--swiper-pagination-bottom, 135px);
+    }
+}
+
+@media (max-width: 375px) {
+    .btn {
+        padding: 8px 10px;
+        font-size: 16px;
+    }
+}

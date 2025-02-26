@@ -1,0 +1,57 @@
+.partners-section {
+    padding: 50px 10%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.partners-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.partners-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.partner-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 150px;
+}
+
+.partner-logo {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+    .partners-container {
+        gap: 20px;
+    }
+
+    .partner-card {
+        max-width: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .partners-container {
+        flex-wrap: wrap;
+    }
+
+    .partner-card {
+        max-width: 100px;
+    }
+
+    .partners-title {
+        text-align: center;
+    }
+}

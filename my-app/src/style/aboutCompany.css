@@ -1,0 +1,142 @@
+.about-company {
+    padding: 50px 10%;
+    background-color: #fff;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Левая часть - текст */
+.about-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-text h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.about-text ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.about-text ul li {
+    font-size: 16px;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.about-text ul li::before {
+    content: "•";
+    color: black;
+    position: absolute;
+    left: 0;
+}
+
+/* Кнопка */
+.about-button {
+    background-color: #a1361e;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.about-button:hover {
+    background-color: #7a2816;
+}
+
+/* Правая часть - изображения */
+.about-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.small-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.small-images img {
+    width: 48%;
+    border-radius: 5px;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    .about-images {
+        width: 100%;
+    }
+
+    .small-images {
+        justify-content: center;
+    }
+
+    .small-images img {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-company {
+        padding: 30px 5%;
+    }
+
+    .about-text h2 {
+        font-size: 24px;
+    }
+
+    .about-text h3 {
+        font-size: 18px;
+    }
+
+    .about-text p,
+    .about-text ul li {
+        font-size: 14px;
+    }
+
+    .about-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
