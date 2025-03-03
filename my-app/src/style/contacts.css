@@ -1,0 +1,306 @@
+.contacts-section {
+    padding: 50px 10%;
+    background-color: #fff;
+}
+
+/* Контейнер с контактами */
+.contacts-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Левая часть - контакты */
+.contact-info {
+    flex: 1;
+    max-width: 50%;
+    margin-left: 30px;
+}
+
+.contact-info h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-item h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-item .icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Правая часть - карта */
+.contact-map {
+    flex: 1;
+    max-width: 50%;
+    margin-right: 30px;
+}
+
+/* Форма */
+.contact-form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+    gap: 40px; /* Отступ между колонками */
+    margin-top: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form-left {
+    flex: 1;
+    max-width: 45%;
+}
+
+.contact-form-right {
+    flex: 1;
+    max-width: 50%;
+    text-align: left; /* Выравниваем текст и элементы влево */
+    margin-right: 30px; /* Сдвигаем левее */
+    margin-top: 55px;
+}
+
+
+.contact-form-container h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f3f3f3; /* Светлый фон */
+    font-size: 16px;
+    max-width: 400px;
+}
+
+.contact-form-right textarea {
+    height: 250px; /* Увеличить высоту только для правой части */
+    max-width: 100%; /* Оставить ширину адаптивной */
+    padding: 15px;
+    font-size: 16px;
+    resize: vertical; /* Разрешить только изменение высоты */
+}
+
+.contact-form-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+
+.contact-form button {
+    background-color: #6A40F1; /* Фиолетовый цвет, как на второй картинке */
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 60%;
+    margin-top: 10px;
+}
+
+.contact-form button:hover {
+    background-color: #5433D5;
+}
+
+/* Партнеры */
+.partners-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.partners-container h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.partners-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.partners-list img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+    .contacts-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .contact-info h2 {
+        font-size: 26px; /* Уменьшаем заголовок */
+        text-align: center;
+    }
+
+    .contact-info, .contact-map {
+        max-width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contact-item {
+        justify-content: center;
+        font-size: 16px; /* Делаем текст контактов чуть меньше */
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .contact-form-container {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .contact-form-left, .contact-form-right {
+        max-width: 100%;
+    }
+
+    .contact-form-right {
+        margin-top: 20px;
+        margin-right: 0;
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+        max-width: 100%;
+    }
+
+    .contact-item .icon {
+        width: 22px; /* Делаем иконки немного меньше */
+        height: 22px;
+    }
+
+    .contact-item h4 {
+        font-size: 18px; /* Размер подзаголовков */
+    }
+
+    .contact-form-title {
+        font-size: 24px; /* Делаем заголовок чуть меньше */
+        text-align: center; /* Выравниваем заголовок по центру */
+        margin-bottom: 20px;
+    }
+
+    .contact-form textarea {
+        width: 100%;
+        min-height: 180px;
+    }
+
+    .contact-form button {
+        width: 100%; /* Делаем кнопку на всю ширину */
+        margin-top: 15px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .contact-form-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-form-left,
+    .contact-form-right {
+        max-width: 100%;
+    }
+
+    .contact-form-title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .contact-form textarea {
+        width: 100%;
+        min-height: 200px; /* Увеличиваем высоту поля для сообщений */
+    }
+
+    .contact-form button {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .contacts-section {
+        padding: 30px 5%;
+    }
+
+    .contact-info h2 {
+        font-size: 24px; /* Еще меньше заголовок */
+        text-align: center;
+    }
+
+    .contact-item {
+        font-size: 14px; /* Делаем текст контактов еще чуть меньше */
+        flex-direction: column; /* Ставим элементы в колонку */
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-item h4 {
+        font-size: 16px;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+
+    .partners-list img {
+        max-width: 90px;
+    }
+
+    .partners-container {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .contact-item .icon {
+        width: 20px; /* Делаем иконки еще чуть меньше */
+        height: 20px;
+    }
+}
