@@ -285,5 +285,90 @@
             }
         }
     },
+    "SKF": {
+        "company": {
+            "title": "SKF Company",
+            "description": "SKF is one of the world's leading manufacturers of bearings, seals, lubrication systems, and friction management solutions. Founded in 1907 in Sweden, the company has been providing innovative solutions for industrial and automotive applications.",
+            "assortment_intro": "SKF delivers advanced technologies and reliable solutions to improve efficiency and durability in various industries."
+        },
+        "assortment": {
+            "title": "SKF Product Range:",
+            "items": {
+                "ball_bearings": "Ball bearings: radial, thrust, single-row, and multi-row models.",
+                "roller_bearings": "Roller bearings: cylindrical, tapered, and spherical variants.",
+                "seals": "Seals: oil, hydraulic, pneumatic, and high-temperature solutions.",
+                "lubrication_systems": "Lubrication systems: centralized systems and accessories to extend machinery lifespan.",
+                "condition_monitoring": "Condition monitoring systems: vibration sensors, diagnostics, and analytics for predictive maintenance."
+            }
+        }
+    },
+    "NSK": {
+        "company": {
+            "title": "NSK Company",
+            "description": "NSK is a leading manufacturer of bearings, linear motion systems, and automotive components. Founded in 1916 in Japan, the company is known for its high-tech solutions for industrial and automotive applications.",
+            "assortment_intro": "NSK offers a wide range of products designed to enhance efficiency, precision, and durability in various applications."
+        },
+        "assortment": {
+            "title": "NSK Product Range:",
+            "items": {
+                "ball_bearings": "Ball bearings: radial, thrust, angular contact, and self-aligning models.",
+                "roller_bearings": "Roller bearings: cylindrical, tapered, and spherical bearings.",
+                "linear_motion": "Linear motion systems: guides, ball screws, and actuator modules.",
+                "automotive_parts": "Automotive components: wheel hub units, steering systems, and transmission bearings.",
+                "machine_components": "Machine components: precision spindle bearings, electric motor units."
+            }
+        }
+    },
+    "NACHI": {
+        "company": {
+            "title": "NACHI Company",
+            "description": "NACHI is a leading Japanese manufacturer of bearings, cutting tools, hydraulic components, and robotic systems. Founded in 1928, the company provides innovative solutions for the industrial and automotive sectors.",
+            "assortment_intro": "NACHI offers advanced technologies and products that ensure reliability, efficiency, and high performance."
+        },
+        "assortment": {
+            "title": "NACHI Product Range:",
+            "items": {
+                "ball_bearings": "Ball bearings: radial, thrust, angular contact, and miniature models.",
+                "roller_bearings": "Roller bearings: cylindrical, tapered, spherical, and needle bearings.",
+                "cutting_tools": "Cutting tools: milling cutters, drills, turning inserts, and special tools.",
+                "hydraulics": "Hydraulic components: pumps, valves, cylinders, and control systems.",
+                "industrial_robots": "Industrial robots: robotic manipulators and automated production solutions."
+            }
+        }
+    },
+    "NTN": {
+        "company": {
+            "title": "NTN Company",
+            "description": "NTN is one of the world's leading manufacturers of bearings, transmission systems, and linear motion products. Founded in 1918 in Japan, the company has established itself as a provider of high-quality solutions for various industries.",
+            "assortment_intro": "NTN products are known for their reliability, durability, and innovative technology, making them essential in the automotive, aerospace, energy, and machinery sectors."
+        },
+        "assortment": {
+            "title": "NTN Product Range:",
+            "items": {
+                "ball_bearings": "Ball bearings: radial, thrust, angular contact, and miniature models.",
+                "roller_bearings": "Roller bearings: cylindrical, tapered, spherical, and needle bearings.",
+                "wheel_bearings": "Automotive bearings: wheel hub units, transmission bearings, and suspension systems.",
+                "linear_motion": "Linear motion components: guide rails, roller and ball guides.",
+                "power_transmission": "Power transmission systems: couplings, driveshafts, and chain drives."
+            }
+        }
+    },
+    "INA": {
+        "company": {
+            "title": "INA Company",
+            "description": "INA is a leading global manufacturer of bearings and linear motion systems. Founded in 1946 in Germany, the company is part of the Schaeffler Group and provides innovative solutions for mechanical engineering, the automotive industry, and other sectors.",
+            "assortment_intro": "INA bearings are known for their reliability, high precision, and durability, making them essential in various industrial and automotive applications."
+        },
+        "assortment": {
+            "title": "INA Product Range:",
+            "items": {
+                "ball_bearings": "Ball bearings: radial, thrust, and angular contact bearings.",
+                "roller_bearings": "Roller bearings: cylindrical, tapered, and needle bearings.",
+                "plain_bearings": "Plain bearings: bushing-type and spherical bearings.",
+                "linear_motion": "Linear motion systems: guides, ball screws, and linear modules.",
+                "automotive_components": "Automotive components: belt tensioners, pulleys, and engine parts."
+            }
+        }
+    },
     "gallery": "Gallery"
 }
