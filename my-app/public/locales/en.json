@@ -1,0 +1,289 @@
+{
+    "header": {
+        "catalog": "Catalog",
+        "about": "About",
+        "delivery": "Delivery & Payment",
+        "contacts": "Contacts"
+    },
+    "contact": {
+        "phone": "+7 777 777 77 77",
+        "address": "Astana, Konaeva 33"
+    },
+    "lang": {
+        "ru": "ru",
+        "en": "en"
+    },
+    "Wurth": {
+        "company": {
+            "title": "WURTH Company",
+            "description": "LLP 'Würth-Kazakhstan' was founded by the Würth concern in 1996 in Almaty and supplies products to customers throughout Kazakhstan. It has branches and warehouses in Astana, Atyrau, Aktobe, Aktau, Pavlodar, Karaganda, Shymkent, and Tengiz.",
+            "assortment_intro": "The Wurth assortment includes over 100,000 items of tools, consumables, components, and equipment for installation, maintenance, and repair."
+        },
+        "assortment": {
+            "title": "The range of supplied products includes:",
+            "items": {
+                "liquids": "Automotive technical fluids: motor, hydraulic, transmission oils, coolants, brake fluids, etc.",
+                "chemical_products": "Chemical-technical products: cleaning, washing, disinfecting agents, removers, adhesives for various materials, modifiers, silicones, sealants, etc.",
+                "measurement_tools": "Measuring instruments: levels, laser measuring devices, geodetic instruments, protractors, measuring tapes, calipers, multimeters, thickness gauges, and other measuring tools.",
+                "storage_systems": "Storage systems: racks, boxes, plastic and metal containers, packaging systems, packing films, marking systems, layout application devices, etc.",
+                "welding_equipment": "Welding accessories: spot welding machines, electric welding guns for body shops, welding templates, hammers, protective masks, goggles, welding gloves, gas welding kits, regulators, etc."
+            }
+        }
+    },
+    "McMaster": {
+        "company": {
+            "title": "McMaster-Carr Company",
+            "description": "McMaster-Carr is a leading supplier of industrial and engineering solutions with over a century of experience. The company offers a wide range of products, including fasteners, tools, piping, electrical equipment, and more.",
+            "assortment_intro": "Founded in 1901, McMaster-Carr has become a trusted partner for engineers, mechanics, and businesses worldwide, providing fast delivery and high-quality products."
+        },
+        "assortment": {
+            "title": "McMaster-Carr Product Assortment:",
+            "items": {
+                "fasteners": "Fasteners: screws, nuts, bolts, washers, and anchors.",
+                "tools": "Tools: hand tools, power tools, and specialized instruments.",
+                "pipe_fittings": "Pipes and fittings: pipes, valves, connectors.",
+                "electrical": "Electrical equipment: cables, lighting, industrial connectors.",
+                "safety": "Safety equipment: protective gear, signal systems, safety signs."
+            }
+        }
+    },
+    "Roebuck": {
+        "company": {
+            "title": "Roebuck Company",
+            "description": "Roebuck is a leading supplier of professional hand tools and industrial solutions. The brand is part of Cromwell and is known for its high quality, reliability, and durability.",
+            "assortment_intro": "Roebuck offers a wide range of tools designed for mechanics, engineers, and maintenance professionals."
+        },
+        "assortment": {
+            "title": "Roebuck Product Range:",
+            "items": {
+                "hand_tools": "Hand tools: screwdrivers, wrenches, pliers, side cutters.",
+                "power_tools": "Power tools: cordless drills, grinders, impact wrenches.",
+                "cutting_tools": "Cutting tools: saws, hacksaws, metal shears.",
+                "tool_storage": "Tool storage: metal boxes, tool trolleys, workbenches.",
+                "safety_gear": "Safety gear: work gloves, safety glasses, helmets."
+            }
+        }
+    },
+    "Eclipse": {
+        "company": {
+            "title": "Eclipse Company",
+            "description": "Eclipse is a globally recognized manufacturer of professional hand tools, specializing in innovative solutions for cutting, clamping, and securing. With over 100 years of history, the company provides high-quality tools for industries such as metalworking, woodworking, and construction.",
+            "assortment_intro": "Eclipse offers a wide range of hand tools, ensuring reliability and high performance for professionals."
+        },
+        "assortment": {
+            "title": "Eclipse Product Range:",
+            "items": {
+                "cutting_tools": "Cutting tools: hacksaws, metal cutting blades, pipe cutters.",
+                "clamping_tools": "Clamping tools: vices, clamps, quick-release mechanisms.",
+                "saw_blades": "Saw blades: blades for band saws and hand saws.",
+                "measuring_tools": "Measuring tools: levels, rulers, protractors.",
+                "specialty_tools": "Specialty tools: magnetic holders, center punches, hole punches."
+            }
+        }
+    },
+    "Cutline": {
+        "company": {
+            "title": "GISS CUTLINE Company",
+            "description": "GISS CUTLINE is a leading manufacturer of high-precision cutting tools for metalworking, woodworking, and construction. The company offers a wide range of drills, milling cutters, hole saws, and other tools for precise and efficient cutting.",
+            "assortment_intro": "GISS CUTLINE products are known for their quality, durability, and high performance in professional and industrial applications."
+        },
+        "assortment": {
+            "title": "GISS CUTLINE Product Range:",
+            "items": {
+                "drills": "Drills: carbide, spiral, annular cutters.",
+                "milling_tools": "Milling cutters: end mills, disc mills, form milling cutters.",
+                "hole_saws": "Hole saws: for metal, wood, composite materials.",
+                "boring_tools": "Boring tools: adjustable heads, drill chucks.",
+                "threading_tools": "Threading tools: taps, dies, thread cutting heads."
+            }
+        }
+    },
+    "Gates": {
+        "company": {
+            "title": "GATES Company",
+            "description": "GATES is a global leader in the production of drive belts, hydraulic hoses, and power transmission solutions. The company provides innovative and reliable solutions for various industries, including automotive, industrial, agricultural, and construction.",
+            "assortment_intro": "GATES products ensure long service life, high performance, and reliability in the most demanding operating conditions."
+        },
+        "assortment": {
+            "title": "GATES Product Range:",
+            "items": {
+                "drive_belts": "Drive belts: V-belts, multi-ribbed belts, timing belts.",
+                "hydraulic_hoses": "Hydraulic hoses: high-pressure, low-pressure, heat-resistant hoses.",
+                "power_transmission": "Power transmission systems: pulleys, couplings, tensioners.",
+                "cooling_systems": "Cooling system components: thermostats, water pumps, hoses.",
+                "industrial_solutions": "Industrial solutions: conveyor belts, reinforced hoses, specialty equipment belts."
+            }
+        }
+    },
+    "Continental": {
+        "company": {
+            "title": "Continental Company",
+            "description": "Continental is a global leader in the production of tires, rubber products, and automotive components. The company offers innovative solutions for vehicles, enhancing safety, efficiency, and comfort.",
+            "assortment_intro": "Continental products are widely used in automotive, industrial, and agricultural applications, ensuring reliability and durability."
+        },
+        "assortment": {
+            "title": "Continental Product Range:",
+            "items": {
+                "tires": "Tires: for passenger cars, trucks, special equipment, and agricultural machinery.",
+                "hoses": "Rubber products: hoses for cooling systems, hydraulics, and fuel applications.",
+                "drive_belts": "Drive belts: V-belts, timing belts, multi-ribbed belts for various applications.",
+                "automotive_components": "Automotive components: braking systems, suspension, shock absorbers.",
+                "industrial_solutions": "Industrial solutions: rubber coatings, conveyor belts, high-pressure hoses."
+            }
+        }
+    },
+    "Optibelt": {
+        "company": {
+            "title": "Optibelt Company",
+            "description": "Optibelt is one of the world's leading manufacturers of drive belts and power transmission solutions. The company provides products that meet the highest standards of quality, reliability, and durability.",
+            "assortment_intro": "Optibelt products are widely used in industry, automotive, agriculture, and mechanical engineering, ensuring efficient power transmission."
+        },
+        "assortment": {
+            "title": "Optibelt Product Range:",
+            "items": {
+                "v_belts": "V-belts: standard, reinforced, and high-temperature models.",
+                "timing_belts": "Timing belts: for synchronous drives in industry and automotive applications.",
+                "poly_v_belts": "Poly V-belts: for energy-efficient torque transmission.",
+                "special_belts": "Special belts: for heavy-duty applications and custom solutions.",
+                "power_transmission": "Power transmission systems: pulleys, couplings, rollers, and related components."
+            }
+        }
+    },
+    "DunhamBush": {
+        "company": {
+            "title": "Dunham-Bush Company",
+            "description": "Dunham-Bush is one of the world's leading manufacturers of heating, ventilation, and air conditioning (HVAC) systems. The company is known for its innovative solutions and energy-efficient technologies.",
+            "assortment_intro": "Dunham-Bush offers a wide range of equipment for commercial, industrial, and residential applications, providing reliable and efficient climate control."
+        },
+        "assortment": {
+            "title": "Dunham-Bush Product Range:",
+            "items": {
+                "chillers": "Chillers: water-cooled and air-cooled systems.",
+                "air_handling": "Air handling units: ventilation and air conditioning systems.",
+                "heat_pumps": "Heat pumps: efficient solutions for heating and cooling.",
+                "compressors": "Compressors: reciprocating, screw, and centrifugal models.",
+                "fan_coils": "Fan coils: compact and high-efficiency air conditioning units."
+            }
+        }
+    },
+    "AmetekCrystal": {
+        "company": {
+            "title": "Ametek Crystal Company",
+            "description": "Ametek Crystal Engineering is a leading developer and manufacturer of high-precision instruments for pressure calibration and process measurement. The company provides innovative solutions for the oil & gas, aviation, and other industrial sectors.",
+            "assortment_intro": "Ametek Crystal products include a wide range of instruments for precise measurement and pressure control, ensuring reliability and accuracy in the most demanding environments."
+        },
+        "assortment": {
+            "title": "Ametek Crystal Product Range:",
+            "items": {
+                "pressure_calibrators": "Pressure calibrators: high-precision portable and stationary devices.",
+                "pressure_gauges": "Pressure gauges: digital and analog devices for measuring pressure.",
+                "hose_fittings": "Hose and fittings: connectors for hydraulic systems.",
+                "test_equipment": "Test equipment: kits for system inspection and diagnostics.",
+                "process_instruments": "Process instruments: tools for monitoring and controlling industrial processes."
+            }
+        }
+    },
+    "AflexHose": {
+        "company": {
+            "title": "Aflex Hose Company",
+            "description": "Aflex Hose is a leading manufacturer of flexible PTFE-coated hoses for various industrial applications. The company provides innovative solutions for the chemical, pharmaceutical, food, and other industries, ensuring durability and reliability of its products.",
+            "assortment_intro": "Aflex Hose offers a wide range of high-quality flexible hoses designed to operate in aggressive environments and under high pressure."
+        },
+        "assortment": {
+            "title": "Aflex Hose Product Range:",
+            "items": {
+                "ptfe_hoses": "PTFE hoses: resistant to chemical exposure and high temperatures.",
+                "smoothbore_hoses": "Smoothbore hoses: for medical and pharmaceutical applications.",
+                "corrugated_hoses": "Corrugated hoses: flexible and durable solutions for demanding environments.",
+                "reinforced_hoses": "Reinforced hoses: enhanced strength for high-pressure applications.",
+                "custom_hoses": "Custom solutions: tailored configurations for unique client needs."
+            }
+        }
+    },
+    "Parker": {
+        "company": {
+            "title": "Parker Company",
+            "description": "Parker Hannifin is a global leader in hydraulic, pneumatic, and motion control solutions. The company provides advanced technologies for various industries, including engineering, aerospace, oil and gas, and automotive sectors.",
+            "assortment_intro": "Parker's product range includes a wide variety of components and systems for motion control, as well as fluid and gas handling."
+        },
+        "assortment": {
+            "title": "Parker Product Range:",
+            "items": {
+                "hydraulic_systems": "Hydraulic systems: pumps, valves, cylinders, filters.",
+                "pneumatic_components": "Pneumatic components: compressors, actuators, valves.",
+                "fluid_connectors": "Fluid connectors: hydraulic and pneumatic fittings, hoses.",
+                "sealing_solutions": "Sealing solutions: seals, gaskets, adhesives.",
+                "filtration_systems": "Filtration systems: liquid, air, and gas filters."
+            }
+        }
+    },
+    "STATS": {
+        "company": {
+            "title": "STATS Group Company",
+            "description": "STATS Group is a leading global provider of pipeline maintenance, repair, and isolation solutions for the oil and gas industry. The company specializes in advanced pipeline isolation, pressure, and flow control technologies.",
+            "assortment_intro": "STATS Group delivers innovative solutions to minimize downtime, enhance safety, and improve pipeline maintenance efficiency."
+        },
+        "assortment": {
+            "title": "STATS Group Product Range:",
+            "items": {
+                "pipeline_isolation": "Pipeline isolation systems: temporary and permanent isolators, flow blocking systems.",
+                "hot_tapping": "Hot tapping technologies: equipment for connecting to live pipelines without flow interruption.",
+                "welding_interventions": "Welding intervention systems: tools for isolating welded joints.",
+                "testing_solutions": "Testing solutions: hydrostatic testing, pressure tests.",
+                "emergency_response": "Emergency response solutions: mobile systems for rapid damage containment."
+            }
+        }
+    },
+    "KnowsleySK": {
+        "company": {
+            "title": "Knowsley SK Company",
+            "description": "Knowsley SK is a leading manufacturer of fire suppression systems and firefighting equipment for various industries. The company specializes in developing innovative solutions to protect people and infrastructure from fire hazards.",
+            "assortment_intro": "Knowsley SK offers advanced fire suppression systems that provide reliable protection for industrial sites, offshore platforms, and energy facilities."
+        },
+        "assortment": {
+            "title": "Knowsley SK Product Range:",
+            "items": {
+                "fire_nozzles": "Fire nozzles: adjustable and fixed nozzles for optimal water and foam distribution.",
+                "foam_systems": "Foam systems: foam generators, proportioning systems, and storage tanks.",
+                "fire_monitors": "Fire monitors: stationary and mobile systems for large-scale fire suppression.",
+                "fire_suppression": "Fire suppression systems: automated installations for building and equipment protection.",
+                "hose_reels": "Fire hose reels: reliable solutions for quick and effective water delivery."
+            }
+        }
+    },
+    "Kuriyama": {
+        "company": {
+            "title": "Kuriyama Company",
+            "description": "Kuriyama is a leading manufacturer of industrial hoses, fittings, and components for various industries. The company provides high-quality solutions for agriculture, petrochemicals, food processing, and more.",
+            "assortment_intro": "Kuriyama offers a wide range of industrial hoses and connectors to ensure reliability and safety in operations."
+        },
+        "assortment": {
+            "title": "Kuriyama Product Range:",
+            "items": {
+                "industrial_hoses": "Industrial hoses: rubber, PVC, and polyurethane hoses for various applications.",
+                "fittings": "Fittings and connectors: a wide range of adapters, couplings, and clamps.",
+                "hydraulic_systems": "Hydraulic systems: high-pressure hoses, reinforced tubing, and connectors.",
+                "specialty_hoses": "Specialty hoses: corrosion-resistant, food-grade, and chemically resistant hoses.",
+                "safety_equipment": "Safety equipment: accessories and components for safe hose operation."
+            }
+        }
+    },
+    "FAG": {
+        "company": {
+            "title": "FAG Company",
+            "description": "FAG is a leading manufacturer of bearings and components for mechanical engineering, automotive, and aerospace industries. As part of the Schaeffler Group, the company is known for its innovative bearing technology solutions.",
+            "assortment_intro": "FAG offers a wide range of high-precision bearings and friction management systems, ensuring durability and reliability in machinery operations."
+        },
+        "assortment": {
+            "title": "FAG Product Range:",
+            "items": {
+                "ball_bearings": "Ball bearings: radial, thrust, single-row, and multi-row models.",
+                "roller_bearings": "Roller bearings: cylindrical, tapered, and spherical variants.",
+                "plain_bearings": "Plain bearings: long-lasting solutions for various industries.",
+                "automotive_bearings": "Automotive bearings: solutions for engines, transmissions, and chassis.",
+                "industrial_solutions": "Industrial solutions: bearing units, lubrication, and monitoring systems."
+            }
+        }
+    },
+    "gallery": "Gallery"
+}
