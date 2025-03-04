@@ -1,0 +1,79 @@
+.catalog {
+    padding: 50px 16.82%;
+    background-color: #fff;
+    text-align: left;
+}
+
+.catalog-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Разделы каталога */
+.catalog-section {
+    margin-bottom: 40px;
+}
+
+/* Грид-сетка для карточек */
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Карточка товара */
+.catalog-item {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.catalog-item:hover {
+    transform: scale(1.05);
+}
+
+/* Изображение */
+.catalog-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+/* Лейбл */
+.catalog-label {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+    .catalog {
+        padding: 50px 10%;
+    }
+
+    .catalog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .catalog {
+        padding: 30px 5%;
+    }
+
+    .catalog-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../images/arg-logo.png";
 import phone from "../images/Phone.png";
+import {Link} from "react-router-dom";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,9 +10,7 @@ const Header = () => {
   return (
     <header className="bg-white shadow-md">
       <div className="container max-w-screen-xl mx-auto px-16">
-        {/* Верхний блок с телефоном, логотипом и адресом */}
         <div className="flex justify-between items-center py-2">
-          {/* Телефон в левом верхнем углу */}
           <a href="tel:+77777777777" className="text-gray-700 flex items-center space-x-0">
             <img src={phone} alt="Телефон" className="h-6 w-6 relative top-1" />
             <span className="font-semibold">+7 777 777 77 77</span>
@@ -35,24 +34,23 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Нижний блок с логотипом и навигацией */}
         <div className="flex justify-between items-center py-3">
-          {/* Логотип и текст рядом с ним */}
-          <div className="flex items-center space-x-4">
-            <img src={logo} alt="ARG Logo" className="h-20 w-auto" />
-            <div className="text-sm text-gray-600 leading-tight">
-              <p className="font-semibold">Поставка и сервисное</p>
-              <p className="font-semibold">обслуживание промышленного</p>
-              <p className="font-semibold">оборудования</p>
+          <Link to="/">
+            <div className="flex items-center space-x-4">
+              <img src={logo} alt="ARG Logo" className="h-20 w-auto"/>
+              <div className="text-sm text-gray-600 leading-tight">
+                <p className="font-semibold">Поставка и сервисное</p>
+                <p className="font-semibold">обслуживание промышленного</p>
+                <p className="font-semibold">оборудования</p>
+              </div>
             </div>
-          </div>
+          </Link>
 
-          {/* Десктопное меню */}
           <nav className="hidden lg:flex space-x-6 text-gray-700 font-medium text-lg">
-            <a href="/" className="hover:text-orange-500">Каталог</a>
-            <a href="/" className="hover:text-orange-500">О компании</a>
-            <a href="/" className="hover:text-orange-500">Доставка и оплата</a>
-            <a href="/" className="hover:text-orange-500">Контакты</a>
+            <Link to="/catalog" className="hover:text-orange-500">Каталог</Link>
+            <Link to="/" className="hover:text-orange-500">О компании</Link>
+            <Link to="/delivery" className="hover:text-orange-500">Доставка и оплата</Link>
+            <Link to="/contact" className="hover:text-orange-500">Контакты</Link>
           </nav>
         </div>
 

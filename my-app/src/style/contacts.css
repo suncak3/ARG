@@ -1,5 +1,5 @@
 .contacts-section {
-    padding: 50px 10%;
+    padding: 50px 18%;
     background-color: #fff;
 }
 
@@ -161,8 +161,29 @@
     height: auto;
 }
 
+@media (max-width: 1700px) {
+    .contacts-section {
+        padding: 50px 14%;
+    }
+}
+
+
+@media (max-width: 1590px) {
+    .contacts-section {
+        padding: 50px 12%;
+    }
+}
+
+
+@media (max-width: 1370px) {
+    .contacts-section {
+        padding: 50px 8%;
+    }
+}
+
+
 /* Адаптивность */
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
     .contacts-container {
         flex-direction: column;
         align-items: center;

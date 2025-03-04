@@ -1,0 +1,117 @@
+.delivery {
+    padding: 50px 16.82%;
+    background-color: #fff;
+    text-align: left;
+}
+
+.delivery-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Подзаголовок */
+.delivery-subtitle {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Контейнер для блока */
+.delivery-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* Иконки */
+.delivery-icon {
+    width: 50px;
+    height: 50px;
+}
+
+/* Текст */
+.delivery-text h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.delivery-text p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Ссылка */
+.delivery-text a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.delivery-text a:hover {
+    text-decoration: underline;
+}
+
+/* Партнеры */
+.partners-container {
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+/*.partner-logo {*/
+/*    height: 50px;*/
+/*}*/
+
+/* Кнопка */
+.contact-button-container {
+    text-align: left;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #7b5df9;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #644cd1;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+    .delivery {
+        padding: 50px 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .delivery {
+        padding: 30px 5%;
+    }
+
+    .delivery-block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .partners-container {
+        justify-content: center;
+    }
+
+    .contact-button-container {
+        text-align: center;
+    }
+}
