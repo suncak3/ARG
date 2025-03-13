@@ -6,6 +6,9 @@ import Footer from "./components/footer";
 import Contacts from "./components/Contacts";
 import Catalog from "./pages/CatalogPage";
 import DeliveryPage from "./pages/DeliveryPage";
+import IndexPage from "./pages/IndexPage";
+import "./i18n"; // Подключение i18n
+
 
 function App() {
   return (
@@ -17,6 +20,7 @@ function App() {
                 <Route path="/contact" element={<Contacts />} />
                 <Route path="/catalog" element={<Catalog />} />
                 <Route path="/delivery" element={<DeliveryPage />} />
+                <Route path="/catalog/:company" element={<IndexPage />} />
             </Routes>
             <Footer />
         </Router>

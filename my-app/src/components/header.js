@@ -3,10 +3,14 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../images/arg-logo.png";
 import phone from "../images/Phone.png";
 import {Link} from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const { i18n } = useTranslation();
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
   return (
     <header className="bg-white shadow-md">
       <div className="container max-w-screen-xl mx-auto px-16">
@@ -23,9 +27,9 @@ const Header = () => {
 
           {/* Переключение языка */}
           <div className="flex items-center space-x-2 text-base">
-            <a href="/" className="text-orange-500 font-semibold">рус</a>
+            <button onClick={() => changeLanguage("ru")} className="text-orange-500 font-semibold">🇷🇺 Рус</button>
             <span className="text-gray-400">|</span>
-            <a href="/" className="text-gray-600 hover:text-orange-500">eng</a>
+            <button onClick={() => changeLanguage("en")} className="text-gray-600 hover:text-orange-500">🇬🇧 Eng</button>
           </div>
 
           {/* Бургер-иконка (показывается только на мобилке) */}
