@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "../style/partnersList.css"; // Подключаем стили
 
 const partners = [
@@ -10,13 +11,15 @@ const partners = [
 ];
 
 const PartnersList = () => {
+    const { t } = useTranslation();
+
     return (
         <section className="partners-section">
-            <h2 className="partners-title">Партнеры</h2>
+            <h2 className="partners-title">{t('partners.title')}</h2>
             <div className="partners-container">
                 {partners.map((partner) => (
                     <div key={partner.id} className="partner-card">
-                        <img src={partner.logo} alt={partner.name} className="partner-logo" />
+                        <img src={partner.logo} alt={partner.name} className="partner-logo"/>
                     </div>
                 ))}
             </div>

@@ -80,11 +80,36 @@
         "workshopAlt": "Мастерская",
         "partsAlt": "Автозапчасти"
     },
+    "footer": {
+        "subscribe": "Подпишитесь на нашу рассылку",
+        "receiveOffers": "и получайте выгодные предложения!",
+        "emailPlaceholder": "Email",
+        "subscribeButton": "Подписаться",
+        "catalog": "Каталог",
+        "products": "Товары",
+        "services": "Услуги",
+        "brands": "Бренды",
+        "customers": "Покупателям",
+        "deliveryAndPayment": "Доставка и оплата",
+        "productWarranty": "Гарантия на товар",
+        "company": "Компания",
+        "aboutCompany": "О компании",
+        "certificates": "Сертификаты",
+        "contacts": "Наши контакты",
+        "phoneAlt": "Телефон",
+        "emailAlt": "Email",
+        "addressAlt": "Адрес",
+        "address": "г. Астана, Конаева 33",
+        "reliablePartner": "ARG – самый надежный партнер!"
+    },
     "catalog": {
         "tools": "Инструменты",
         "belts": "Ремни",
         "hoses": "Шланги и фитинги",
         "bearings": "Подшипники"
+    },
+    "partners": {
+        "title": "Партнеры"
     },
   "Wurth": {
       "company": {

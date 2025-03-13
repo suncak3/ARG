@@ -80,11 +80,36 @@
         "workshopAlt": "Workshop",
         "partsAlt": "Auto parts"
     },
+    "footer": {
+        "subscribe": "Subscribe to our newsletter",
+        "receiveOffers": "and receive special offers!",
+        "emailPlaceholder": "Email",
+        "subscribeButton": "Subscribe",
+        "catalog": "Catalog",
+        "products": "Products",
+        "services": "Services",
+        "brands": "Brands",
+        "customers": "Customers",
+        "deliveryAndPayment": "Delivery and Payment",
+        "productWarranty": "Product Warranty",
+        "company": "Company",
+        "aboutCompany": "About Us",
+        "certificates": "Certificates",
+        "contacts": "Contact Us",
+        "phoneAlt": "Phone",
+        "emailAlt": "Email",
+        "addressAlt": "Address",
+        "address": "Astana, Koneva 33",
+        "reliablePartner": "ARG – your most reliable partner!"
+    },
     "catalog": {
         "tools": "Tools",
         "belts": "Belts",
         "hoses": "Hose and Fittings",
         "bearings": "Bearings"
+    },
+    "partners": {
+        "title": "Partners"
     },
 "Wurth": {
         "company": {

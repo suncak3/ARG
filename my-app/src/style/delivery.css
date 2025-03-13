@@ -56,14 +56,14 @@
     text-decoration: underline;
 }
 
-/* Партнеры */
-.partners-container {
-    display: flex;
-    justify-content: start;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-}
+/*!* Партнеры *!*/
+/*.partners-container {*/
+/*    display: flex;*/
+/*    justify-content: start;*/
+/*    gap: 30px;*/
+/*    flex-wrap: wrap;*/
+/*    margin-bottom: 40px;*/
+/*}*/
 
 /*.partner-logo {*/
 /*    height: 50px;*/
