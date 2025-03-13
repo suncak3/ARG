@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../images/arg-logo.png";
 import phone from "../images/Phone.png";
@@ -7,34 +7,58 @@ import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const { i18n } = useTranslation();
+  const { i18n,t } = useTranslation();
+  const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
+
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("language") || "ru";
+    if (i18n.language !== savedLanguage) {
+      i18n.changeLanguage(savedLanguage);
+    }
+    setCurrentLanguage(savedLanguage);
+  }, []);
+
   const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
+    if (i18n.language !== lng) {
+      i18n.changeLanguage(lng);
+      localStorage.setItem("language", lng);
+      setCurrentLanguage(lng);
+    }
   };
   return (
     <header className="bg-white shadow-md">
       <div className="container max-w-screen-xl mx-auto px-16">
         <div className="flex justify-between items-center py-2">
-          <a href="tel:+77777777777" className="text-gray-700 flex items-center space-x-0">
+          <a href={`tel:${t("contact.phone")}`} className="text-gray-700 flex items-center space-x-0">
             <img src={phone} alt="Телефон" className="h-6 w-6 relative top-1" />
-            <span className="font-semibold">+7 777 777 77 77</span>
+            <span className="font-semibold">{t("contact.phone")}</span>
           </a>
 
           {/* Адрес ближе к переключателю языков */}
           <p className="hidden lg:block text-gray-700 text-lg font-bold ml-96">
-            г. Астана ул. Конаева <span className="font-bold">33</span>
+            {t("contact.address")}
           </p>
 
           {/* Переключение языка */}
-          <div className="flex items-center space-x-2 text-base">
-            <button onClick={() => changeLanguage("ru")} className="text-orange-500 font-semibold">🇷🇺 Рус</button>
+          <div className="hidden lg:block flex items-center space-x-2 text-base">
+            <button
+                onClick={() => changeLanguage("ru")}
+                className={`font-semibold ${currentLanguage === "ru" ? "text-orange-500" : "text-gray-600 hover:text-orange-500"}`}
+            >
+              Рус
+            </button>
             <span className="text-gray-400">|</span>
-            <button onClick={() => changeLanguage("en")} className="text-gray-600 hover:text-orange-500">🇬🇧 Eng</button>
+            <button
+                onClick={() => changeLanguage("en")}
+                className={`font-semibold ${currentLanguage === "en" ? "text-orange-500" : "text-gray-600 hover:text-orange-500"}`}
+            >
+              Eng
+            </button>
           </div>
 
           {/* Бургер-иконка (показывается только на мобилке) */}
           <button className="lg:hidden text-2xl text-gray-700" onClick={() => setMenuOpen(true)}>
-            <FaBars />
+            <FaBars/>
           </button>
         </div>
 
@@ -43,18 +67,18 @@ const Header = () => {
             <div className="flex items-center space-x-4">
               <img src={logo} alt="ARG Logo" className="h-20 w-auto"/>
               <div className="text-sm text-gray-600 leading-tight">
-                <p className="font-semibold">Поставка и сервисное</p>
-                <p className="font-semibold">обслуживание промышленного</p>
-                <p className="font-semibold">оборудования</p>
+                <p className="font-semibold">{t("logo_description.title_1")}</p>
+                <p className="font-semibold">{t("logo_description.title_2")}</p>
+                <p className="font-semibold">{t("logo_description.title_3")}</p>
               </div>
             </div>
           </Link>
 
           <nav className="hidden lg:flex space-x-6 text-gray-700 font-medium text-lg">
-            <Link to="/catalog" className="hover:text-orange-500">Каталог</Link>
-            <Link to="/" className="hover:text-orange-500">О компании</Link>
-            <Link to="/delivery" className="hover:text-orange-500">Доставка и оплата</Link>
-            <Link to="/contact" className="hover:text-orange-500">Контакты</Link>
+            <Link to="/catalog" className="hover:text-orange-500">{t("header.catalog")}</Link>
+            <Link to="/" className="hover:text-orange-500">{t("header.about")}</Link>
+            <Link to="/delivery" className="hover:text-orange-500">{t("header.delivery")}</Link>
+            <Link to="/contact" className="hover:text-orange-500">{t("header.contacts")}</Link>
           </nav>
         </div>
 
@@ -67,14 +91,24 @@ const Header = () => {
           <button className="absolute top-6 right-6 text-3xl text-gray-700" onClick={() => setMenuOpen(false)}>
             <FaTimes />
           </button>
-          <a href="/" className="hover:text-orange-500">Каталог</a>
-          <a href="/" className="hover:text-orange-500">О компании</a>
-          <a href="/" className="hover:text-orange-500">Доставка и оплата</a>
-          <a href="/" className="hover:text-orange-500">Контакты</a>
+          <a href="/" className="hover:text-orange-500">{t("header.catalog")} </a>
+          <a href="/" className="hover:text-orange-500">{t("header.about")}</a>
+          <a href="/" className="hover:text-orange-500">{t("header.delivery")}</a>
+          <a href="/" className="hover:text-orange-500">{t("header.contacts")}</a>
           <div className="text-lg">
-            <a href="/" className="text-orange-500 font-semibold">рус</a>
+            <button
+                onClick={() => changeLanguage("ru")}
+                className={`font-semibold ${currentLanguage === "ru" ? "text-orange-500" : "text-gray-600 hover:text-orange-500"}`}
+            >
+              Рус
+            </button>
             <span className="text-gray-400 mx-2">|</span>
-            <a href="/" className="text-gray-600 hover:text-orange-500">eng</a>
+            <button
+                onClick={() => changeLanguage("en")}
+                className={`font-semibold ${currentLanguage === "en" ? "text-orange-500" : "text-gray-600 hover:text-orange-500"}`}
+            >
+              Eng
+            </button>
           </div>
         </div>
       </div>

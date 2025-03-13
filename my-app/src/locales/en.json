@@ -5,19 +5,94 @@
         "delivery": "Delivery & Payment",
         "contacts": "Contacts"
     },
+    "gallery_title": "Gallery",
+    "logo_description":{
+        "title_1": "Supply and service",
+        "title_2": "of industrial",
+        "title_3": "equipment"
+    },
     "contact": {
         "phone": "+7 777 777 77 77",
-        "address": "Astana, Konaeva 33"
+        "address": "Astana city, Konaeva 33"
     },
     "lang": {
         "ru": "ru",
         "en": "en"
     },
-    "Wurth": {
+    "delivery": {
+        "title": "Delivery and Payment",
+        "payment": {
+            "title": "Payment by Payment Document",
+            "description": "When signing the contract, you will be issued an invoice and a payment document will be sent to your email. With this document, you can pay for your order through the bank and receive the goods in the near future."
+        },
+        "pickup": {
+            "title": "Self-pickup",
+            "description": "Can be made from the warehouse in Moscow at the address: Volokolamskoye Highway 1, building 1. The warehouse operates daily from 8:30 AM to 5:00 PM. To place an order and pick it up yourself, contact our company's managers at: +7 (499) 678-82-35."
+        },
+        "delivery": {
+            "title": "Delivery to the Transport Company Terminal",
+            "description": "Delivery to the terminals of the transport company 'Delovye Linii' is at our expense. For orders over 500,000 tenge, delivery to the nearest terminal of the transport company to the Customer is free of charge. Delivery within Astana is free for orders over 200,000 tenge. If desired, the shipment can be made by a transport company convenient for you."
+        },
+        "partners": "Our Delivery Partners",
+        "contact": "Contact Us to Place an Order"
+    },
+    "contacts": {
+        "title": "Contacts",
+        "address_title": "Address",
+        "address": "Astana, Konaeva 33, office 313",
+        "phone_title": "Phone",
+        "phone": "+7 (777) 777 77 77",
+        "email_title": "Email",
+        "email": "info@arg.kz",
+        "working_hours_title": "Working Hours",
+        "working_hours": "from 8:30 to 17:00",
+        "form_title": "Contact Us",
+        "form_name": "Name",
+        "form_name_placeholder": "Enter your name",
+        "form_phone": "Phone",
+        "form_phone_placeholder": "+7 (7__) ___-__-__",
+        "form_email": "Email",
+        "form_email_placeholder": "example@gmail.com",
+        "form_message": "Message",
+        "form_message_placeholder": "Enter your message",
+        "form_button": "Send"
+    },
+    "slider": {
+        "title1": "Tools from foreign companies",
+        "button1": "Place an order",
+        "title2": "Best solutions for your business",
+        "button2": "Learn more",
+        "title3": "Best solutions for your business",
+        "button3": "Learn more"
+    },
+    "about": {
+        "title": "About the company",
+        "description": "ARG company – your reliable partner in the supply of industrial tools and equipment. We offer a wide range of products from leading global manufacturers, guaranteeing quality, reliability, and competitive prices.",
+        "missionTitle": "Our mission:",
+        "mission": "To provide enterprises with high-quality tools and components, improving their operational efficiency.",
+        "advantagesTitle": "Our advantages:",
+        "advantage1": "Over 10 years in the industrial supply market.",
+        "advantage2": "Direct cooperation with global brands.",
+        "advantage3": "Individual approach to each client.",
+        "advantage4": "Flexible cooperation terms and prompt delivery.",
+        "buttonText": "Learn more",
+        "mainImageAlt": "Main image",
+        "workshopAlt": "Workshop",
+        "partsAlt": "Auto parts"
+    },
+    "catalog": {
+        "tools": "Tools",
+        "belts": "Belts",
+        "hoses": "Hose and Fittings",
+        "bearings": "Bearings"
+    },
+"Wurth": {
         "company": {
             "title": "WURTH Company",
             "description": "LLP 'Würth-Kazakhstan' was founded by the Würth concern in 1996 in Almaty and supplies products to customers throughout Kazakhstan. It has branches and warehouses in Astana, Atyrau, Aktobe, Aktau, Pavlodar, Karaganda, Shymkent, and Tengiz.",
-            "assortment_intro": "The Wurth assortment includes over 100,000 items of tools, consumables, components, and equipment for installation, maintenance, and repair."
+            "assortment_intro": "The Wurth assortment includes over 100,000 items of tools, consumables, components, and equipment for installation, maintenance, and repair.",
+            "img": "https://i.postimg.cc/tRPQvBNs/wurth.png",
+            "title_gallery": "Gallery"
         },
         "assortment": {
             "title": "The range of supplied products includes:",
@@ -28,6 +103,11 @@
                 "storage_systems": "Storage systems: racks, boxes, plastic and metal containers, packaging systems, packing films, marking systems, layout application devices, etc.",
                 "welding_equipment": "Welding accessories: spot welding machines, electric welding guns for body shops, welding templates, hammers, protective masks, goggles, welding gloves, gas welding kits, regulators, etc."
             }
+        },
+        "gallery": {
+            "photo1": "https://i.postimg.cc/wj4GjNkK/wurth-image1.png",
+            "photo2": "https://i.postimg.cc/W4DfF49d/wurth-image2.png",
+            "photo3": "https://i.postimg.cc/Jh9YbWgP/wurth-image3.png"
         }
     },
     "McMaster": {
@@ -369,6 +449,5 @@
                 "automotive_components": "Automotive components: belt tensioners, pulleys, and engine parts."
             }
         }
-    },
-    "gallery": "Gallery"
+    }
 }

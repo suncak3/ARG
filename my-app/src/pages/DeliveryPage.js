@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+import { useTranslation } from "react-i18next";
 import "../style/delivery.css"; // Подключаем стили
 
 const partners = [
@@ -9,62 +10,63 @@ const partners = [
 ];
 
 const DeliveryPage = () => {
+    const { t, i18n } = useTranslation();
+    const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
+    useEffect(() => {
+        const savedLanguage = localStorage.getItem("language") || "ru";
+        if (i18n.language !== savedLanguage) {
+            i18n.changeLanguage(savedLanguage); // Изменяем язык, если он отличается от сохраненного
+        }
+        setCurrentLanguage(savedLanguage); // Устанавливаем текущий язык
+    }, [i18n]);
+
+    const changeLanguage = (lng) => {
+        if (i18n.language !== lng) {
+            i18n.changeLanguage(lng); // Изменяем язык в i18next
+            localStorage.setItem("language", lng); // Сохраняем язык в localStorage
+            setCurrentLanguage(lng); // Обновляем текущий язык
+        }
+    };
+
     return (
         <section className="delivery">
-            <h1 className="delivery-title">Доставка и оплата</h1>
+            <h1 className="delivery-title">{t('delivery.title')}</h1>
             <div className="delivery-block">
                 <img src="images/icons/payment.png" alt="Оплата" className="delivery-icon"/>
                 <div className="delivery-text">
-                    <h2>Оплата по платежному документу</h2>
-                    <p>
-                        При заключении договора, вам будет выставлен счет и на электронную почту отправлен платежный
-                        документ.
-                        По данному документу вы можете оплатить заказ через банк, и получить товар в ближайшее время.
-                    </p>
+                    <h2>{t('delivery.payment.title')}</h2>
+                    <p>{t('delivery.payment.description')}</p>
                 </div>
             </div>
 
-            <h2 className="delivery-subtitle">СПОСОБЫ ПОЛУЧЕНИЯ ТОВАРА</h2>
+            <h2 className="delivery-subtitle">{t('delivery.pickup.title')}</h2>
 
             <div className="delivery-block">
                 <img src="images/icons/pickup.png" alt="Самовывоз" className="delivery-icon"/>
                 <div className="delivery-text">
-                    <h2>Самовывоз</h2>
-                    <p>
-                        Может быть осуществлен со склада в Москве по адресу: Волоколамское шоссе 1, стр. 1. Склад
-                        работает ежедневно с 8:30 до 17:00.
-                        Чтобы оформить заказ и самостоятельно забрать его, обратитесь к менеджерам нашей компании по
-                        тел.:{" "}
-                        <a href="tel:+74996788235">+7 (499) 678-82-35</a>.
-                    </p>
+                    <h2>{t('delivery.pickup.title')}</h2>
+                    <p>{t('delivery.pickup.description')}</p>
                 </div>
             </div>
 
             <div className="delivery-block">
                 <img src="images/icons/delivery.png" alt="Доставка" className="delivery-icon"/>
                 <div className="delivery-text">
-                    <h2>Доставка до терминала транспортной компании</h2>
-                    <p>
-                        Доставка до терминалов ТК «Деловые Линии» производится за наш счет. При заказе от 500 000 тенге
-                        доставка до
-                        ближайшего терминала транспортной компании к Заказчику бесплатна. Доставка по Астане бесплатна
-                        при заказе от
-                        200 000 тенге. По желанию клиента отгрузка может быть осуществлена удобной для вас транспортной
-                        компанией.
-                    </p>
+                    <h2>{t('delivery.delivery.title')}</h2>
+                    <p>{t('delivery.delivery.description')}</p>
                 </div>
             </div>
 
-            <h2 className="delivery-subtitle">Наши партнеры по доставке</h2>
+            <h2 className="delivery-subtitle">{t('delivery.partners')}</h2>
             <div className="partners-container">
                 {partners.map((partner) => (
                     <img key={partner.id} src={partner.image} alt={partner.name} className="partner-logo"/>
                 ))}
             </div>
 
-            <h2 className="delivery-subtitle">Свяжитесь с нами для оформления заказа</h2>
+            <h2 className="delivery-subtitle">{t('delivery.contact')}</h2>
             <div className="contact-button-container">
-                <a href="/contact" className="contact-button">Связаться</a>
+                <a href="/contact" className="contact-button">{t('delivery.contact')}</a>
             </div>
         </section>
     );

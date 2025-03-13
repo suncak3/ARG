@@ -68,6 +68,11 @@
     margin-top: 8rem;
 }
 
+.gallery-title{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
 /* Адаптивность */
 @media (max-width: 769px) {
     .index-page {

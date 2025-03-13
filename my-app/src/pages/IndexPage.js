@@ -1,5 +1,5 @@
-import React from "react";
-import {useBlocker, useParams} from "react-router-dom";
+import React, { useEffect, useState }  from "react";
+import { useParams} from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
@@ -8,15 +8,35 @@ import enData from "../locales/en.json";
 import "../style/indexPage.css";
 
 const IndexPage = () => {
-    const { i18n } = useTranslation();
+    const { i18n, t } = useTranslation();
     const { company } = useParams();
+    const [currentLang, setCurrentLang] = useState(i18n.language);
+    const [companyInfo, setCompanyInfo] = useState(null);
 
-    if (!company) return <p>Компания не указана</p>;
+    useEffect(() => {
+        setCurrentLang(i18n.language);
+    }, [i18n.language]);
+
+    useEffect(() => {
+        if (!company) return;
+
+        const companyData = {
+            ru: ruData,
+            en: enData
+        };
+
+        const formattedCompany = company.charAt(0).toUpperCase() + company.slice(1);
+        setCompanyInfo(companyData[i18n.language]?.[formattedCompany]?.company || null);
+    }, [company, i18n.language]);
+
+    if (!company) return <p>Loading...</p>;
+
+    if (!companyInfo) {
+        return <p>Компания не найдена</p>;
+    }
 
     const companyData = { ru: ruData, en: enData };
-    const currentLang = i18n.language in companyData ? i18n.language : "ru";
     const formattedCompany = company.charAt(0).toUpperCase() + company.slice(1);
-    const companyInfo = companyData[currentLang]?.[formattedCompany]?.company;
     const assortment = companyData[currentLang]?.[formattedCompany]?.assortment;
     const gallery = companyData[currentLang]?.[formattedCompany]?.gallery;
 
@@ -51,11 +71,10 @@ const IndexPage = () => {
                 </ul>
             </div>
 
-
             {/* Галерея с увеличением изображений */}
             {images.length > 0 && (
                 <div className="gallery-block">
-                    <div className="gallery-title">Галерея</div>
+                    <div className="gallery-title">{t("gallery_title")}</div>
                     <br/>
                     <div className="gallery">
                         {images.map((imgSrc, index) => (

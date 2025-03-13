@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useEffect, useState }  from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "../style/catalog.css";
 import PartnersList from "../components/PartnersList";
 
 const catalogSections = [
     {
-        title: "Инструменты (Tools)",
+        key: "tools",
         items: [
             { id: 1, name: "McMASTER-CARR", image: "/images/catalog/tools/mcmaster.png", link: "mcmaster" },
             { id: 2, name: "Roebuck", image: "/images/catalog/tools/roebuck.png", link: "roebuck" },
@@ -15,7 +16,7 @@ const catalogSections = [
         ]
     },
     {
-        title: "Ремни (Belts)",
+        key: "belts",
         items: [
             { id: 6, name: "Gates", image: "/images/catalog/belts/gates.png", link: "gates" },
             { id: 7, name: "Continental", image: "/images/catalog/belts/continental.png", link: "continental" },
@@ -24,7 +25,7 @@ const catalogSections = [
         ]
     },
     {
-        title: "Шланги и фитинги (Hose and Fittings)",
+        key: "hoses",
         items: [
             { id: 10, name: "Gates", image: "/images/catalog/hoses/gates.png", link: "gates-hose" },
             { id: 11, name: "AMETEK", image: "/images/catalog/hoses/ametek.png", link: "ametek" },
@@ -36,7 +37,7 @@ const catalogSections = [
         ]
     },
     {
-        title: "Подшипники (Bearings)",
+        key: "bearings",
         items: [
             { id: 17, name: "FAG", image: "/images/catalog/bearings/fag.png", link: "fag" },
             { id: 18, name: "SKF", image: "/images/catalog/bearings/skf.png", link: "skf" },
@@ -48,15 +49,25 @@ const catalogSections = [
     }
 ];
 
+
 const Catalog = () => {
-    console.log("CatalogPage rendered"); // Проверка загрузки страницы
+    const { t, i18n } = useTranslation();
+    const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
+
+    useEffect(() => {
+        const savedLanguage = localStorage.getItem("language") || "ru";
+        if (i18n.language !== savedLanguage) {
+            i18n.changeLanguage(savedLanguage);
+        }
+        setCurrentLanguage(savedLanguage);
+    }, [i18n]);
 
     return (
         <div className="catalogPage">
             <section className="catalog">
                 {catalogSections.map((section, index) => (
                     <div key={index} className="catalog-section">
-                        <h2 className="catalog-title">{section.title}</h2>
+                        <h2 className="catalog-title">{t(`catalog.${section.key}`)}</h2>
                         <div className="catalog-grid">
                             {section.items.map((item) => (
                                 <Link key={item.id} to={`/catalog/${item.link}`} className="catalog-item">
@@ -70,6 +81,7 @@ const Catalog = () => {
             <PartnersList/>
         </div>
     );
+
 };
 
 export default Catalog;
