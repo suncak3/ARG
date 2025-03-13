@@ -7,6 +7,8 @@ import Contacts from "./components/Contacts";
 import Catalog from "./pages/CatalogPage";
 import DeliveryPage from "./pages/DeliveryPage";
 import IndexPage from "./pages/IndexPage";
+import AboutPage from "./pages/AboutPage";
+
 import "./i18n"; // Подключение i18n
 
 
@@ -20,6 +22,7 @@ function App() {
                 <Route path="/contact" element={<Contacts />} />
                 <Route path="/catalog" element={<Catalog />} />
                 <Route path="/delivery" element={<DeliveryPage />} />
+                <Route path="/about" element={<AboutPage />} />
                 <Route path="/catalog/:company" element={<IndexPage />} />
             </Routes>
             <Footer />

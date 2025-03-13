@@ -76,7 +76,7 @@ const Header = () => {
 
           <nav className="hidden lg:flex space-x-6 text-gray-700 font-medium text-lg">
             <Link to="/catalog" className="hover:text-orange-500">{t("header.catalog")}</Link>
-            <Link to="/" className="hover:text-orange-500">{t("header.about")}</Link>
+            <Link to="/about" className="hover:text-orange-500">{t("header.about")}</Link>
             <Link to="/delivery" className="hover:text-orange-500">{t("header.delivery")}</Link>
             <Link to="/contact" className="hover:text-orange-500">{t("header.contacts")}</Link>
           </nav>
@@ -91,10 +91,10 @@ const Header = () => {
           <button className="absolute top-6 right-6 text-3xl text-gray-700" onClick={() => setMenuOpen(false)}>
             <FaTimes />
           </button>
-          <a href="/" className="hover:text-orange-500">{t("header.catalog")} </a>
-          <a href="/" className="hover:text-orange-500">{t("header.about")}</a>
-          <a href="/" className="hover:text-orange-500">{t("header.delivery")}</a>
-          <a href="/" className="hover:text-orange-500">{t("header.contacts")}</a>
+          <Link to="/catalog" className="hover:text-orange-500">{t("header.catalog")}</Link>
+          <Link to="/about" className="hover:text-orange-500">{t("header.about")}</Link> {/* Updated mobile menu link */}
+          <Link to="/delivery" className="hover:text-orange-500">{t("header.delivery")}</Link>
+          <Link to="/contact" className="hover:text-orange-500">{t("header.contacts")}</Link>
           <div className="text-lg">
             <button
                 onClick={() => changeLanguage("ru")}

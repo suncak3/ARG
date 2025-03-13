@@ -39,7 +39,7 @@ const DeliveryPage = () => {
                 </div>
             </div>
 
-            <h2 className="delivery-subtitle">{t('delivery.pickup.title')}</h2>
+            
 
             <div className="delivery-block">
                 <img src="images/icons/pickup.png" alt="Самовывоз" className="delivery-icon"/>
