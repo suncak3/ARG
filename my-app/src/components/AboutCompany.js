@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next"; // Импортируем useTranslation
-import "../style/aboutCompany.css"; // Подключаем стили
+import "../style/aboutCompany.css";
+import {Link} from "react-router-dom"; // Подключаем стили
 
 const AboutCompany = () => {
     const { t, i18n } = useTranslation(); // Получаем функцию для перевода и i18n
@@ -33,7 +34,9 @@ const AboutCompany = () => {
                         <li>{t('about.advantage4')}</li>
                     </ul>
 
-                    <button className="about-button">{t('about.buttonText')}</button> {/* Кнопка */}
+                    <Link to="/about">
+                        <button className="about-button">{t('about.buttonText')}</button>
+                    </Link>
                 </div>
 
                 {/* Правая часть - изображения */}
