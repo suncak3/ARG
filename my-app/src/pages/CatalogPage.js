@@ -27,12 +27,12 @@ const catalogSections = [
     {
         key: "hoses",
         items: [
-            { id: 10, name: "Gates", image: "/images/catalog/hoses/gates.png", link: "gates-hose" },
+            { id: 10, name: "Gates", image: "/images/catalog/hoses/gates.png", link: "gates" },
             { id: 11, name: "AMETEK", image: "/images/catalog/hoses/ametek.png", link: "ametek" },
             { id: 12, name: "AFLEX HOSE", image: "/images/catalog/hoses/aflex.png", link: "aflex" },
-            { id: 13, name: "Parker", image: "/images/catalog/hoses/parker.png", link: "parker-hose" },
-            { id: 14, name: "STATS GROUP", image: "/images/catalog/hoses/stats-group.png", link: "stats-group" },
-            { id: 15, name: "Knowsley SK", image: "/images/catalog/hoses/knowsley-sk.png", link: "knowsley-sk" },
+            { id: 13, name: "Parker", image: "/images/catalog/hoses/parker.png", link: "parker" },
+            { id: 14, name: "STATS GROUP", image: "/images/catalog/hoses/stats-group.png", link: "statsgroup" },
+            { id: 15, name: "Knowsley SK", image: "/images/catalog/hoses/knowsley-sk.png", link: "knowsleySK" },
             { id: 16, name: "Kuriyama", image: "/images/catalog/hoses/kuriyama.png", link: "kuriyama" }
         ]
     },
