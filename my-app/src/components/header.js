@@ -91,10 +91,10 @@ const Header = () => {
           <button className="absolute top-6 right-6 text-3xl text-gray-700" onClick={() => setMenuOpen(false)}>
             <FaTimes />
           </button>
-          <Link to="/catalog" className="hover:text-orange-500">{t("header.catalog")}</Link>
-          <Link to="/about" className="hover:text-orange-500">{t("header.about")}</Link> {/* Updated mobile menu link */}
-          <Link to="/delivery" className="hover:text-orange-500">{t("header.delivery")}</Link>
-          <Link to="/contact" className="hover:text-orange-500">{t("header.contacts")}</Link>
+          <Link to="/catalog" className="hover:text-orange-500" onClick={() => setMenuOpen(false)}>{t("header.catalog")}</Link>
+          <Link to="/about" className="hover:text-orange-500" onClick={() => setMenuOpen(false)}>{t("header.about")}</Link> {/* Updated mobile menu link */}
+          <Link to="/delivery" className="hover:text-orange-500" onClick={() => setMenuOpen(false)}>{t("header.delivery")}</Link>
+          <Link to="/contact" className="hover:text-orange-500" onClick={() => setMenuOpen(false)}>{t("header.contacts")}</Link>
           <div className="text-lg">
             <button
                 onClick={() => changeLanguage("ru")}
